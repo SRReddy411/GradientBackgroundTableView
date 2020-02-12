@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TableViewExpandWithImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a7o-Jm-fqg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ExpandTableViewCell" rowHeight="167" id="c1h-FD-j5L" customClass="ExpandTableViewCell" customModule="TableViewExpandWithImage" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="167"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c1h-FD-j5L" id="uNb-y3-lXr">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="167"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQY-Mg-g5p">
+                                                    <rect key="frame" x="4" y="4" width="406" height="159"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="kSU-hY-OeZ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="406" height="159"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="15"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OF-Ct-Jys">
+                                                            <rect key="frame" x="4" y="4" width="398" height="151"/>
+                                                            <mutableString key="text">colorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTopcolorTop</mutableString>
+                                                            <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="kSU-hY-OeZ" firstAttribute="top" secondItem="fQY-Mg-g5p" secondAttribute="top" id="S5g-oQ-jt5"/>
+                                                        <constraint firstItem="kSU-hY-OeZ" firstAttribute="leading" secondItem="fQY-Mg-g5p" secondAttribute="leading" id="hcy-Os-8Tq"/>
+                                                        <constraint firstAttribute="bottom" secondItem="7OF-Ct-Jys" secondAttribute="bottom" constant="4" id="lJh-VT-e9l"/>
+                                                        <constraint firstItem="7OF-Ct-Jys" firstAttribute="top" secondItem="fQY-Mg-g5p" secondAttribute="top" constant="4" id="noh-kU-gmL"/>
+                                                        <constraint firstAttribute="trailing" secondItem="7OF-Ct-Jys" secondAttribute="trailing" constant="4" id="sEB-F1-eNi"/>
+                                                        <constraint firstAttribute="trailing" secondItem="kSU-hY-OeZ" secondAttribute="trailing" id="tAH-ej-Lny"/>
+                                                        <constraint firstAttribute="bottom" secondItem="kSU-hY-OeZ" secondAttribute="bottom" id="ulc-Gc-Uys"/>
+                                                        <constraint firstItem="7OF-Ct-Jys" firstAttribute="leading" secondItem="fQY-Mg-g5p" secondAttribute="leading" constant="4" id="zPx-WP-0lh"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.corneaRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fQY-Mg-g5p" firstAttribute="leading" secondItem="uNb-y3-lXr" secondAttribute="leading" constant="4" id="4Zb-Py-gs8"/>
+                                                <constraint firstItem="fQY-Mg-g5p" firstAttribute="top" secondItem="uNb-y3-lXr" secondAttribute="top" constant="4" id="MhL-wg-0j0"/>
+                                                <constraint firstAttribute="trailing" secondItem="fQY-Mg-g5p" secondAttribute="trailing" constant="4" id="kh6-MN-IK1"/>
+                                                <constraint firstAttribute="bottom" secondItem="fQY-Mg-g5p" secondAttribute="bottom" constant="4" id="otl-7U-aID"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgeBackground" destination="kSU-hY-OeZ" id="B0d-T2-ivc"/>
+                                            <outlet property="mainBackView" destination="fQY-Mg-g5p" id="Xiz-j0-po1"/>
+                                            <outlet property="normal_lbl" destination="7OF-Ct-Jys" id="6k1-5U-T8Z"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="4jx-oW-mRJ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="DdQ-OH-p0C"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="a7o-Jm-fqg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KHV-jO-eHC"/>
+                            <constraint firstItem="a7o-Jm-fqg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="b9B-Bt-VyD"/>
+                            <constraint firstItem="a7o-Jm-fqg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="h7S-Wu-chK"/>
+                            <constraint firstItem="a7o-Jm-fqg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ufP-js-n2j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="listTableView" destination="a7o-Jm-fqg" id="iPn-KD-Mu1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="images.jpeg" width="315" height="160"/>
+    </resources>
+</document>
